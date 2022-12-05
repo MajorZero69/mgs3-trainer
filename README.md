@@ -1,92 +1,76 @@
-# MGS3 Trainer
-
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitgud.io/Major_Zero/mgs3-trainer.git
-git branch -M master
-git push -uf origin master
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitgud.io/Major_Zero/mgs3-trainer/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
+# Metal Gear Solid 3 Cheat Engine Trainer
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+This is a Cheat Engine table for MGS3. It's more of a debug and testing tool than a trainer in most conventional senses, as it was not intended for cheating, but can still be used for cheats if desired. This table is also the foundation for [my chat-controlled chaos speedruns](https://youtu.be/Vusag34b8zU?t=59), along with [LioranBoard](https://github.com/LioranWaters/Lioranboard2Update/blob/main/README.md). It allows the user to control most aspects of Snake, his stats, and many of the aspects of the game world. Since this is just a Cheat Engine table with very few scripts, a basic understanding of Cheat Engine may be required to use this table—for users who don't know how to use Cheat Engine, see the Usage section, and don't be afraid to experiment to learn what something does.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+This table is only compatible with the pre-patched (v1.01) digital US-region version of Metal Gear Solid 3: HD Edition, title ID NPUB30610, being emulated with RPCS3. It is not compatible with any other version of MGS3, nor is it likely to ever be compatible with any other PS3 emulator. The table can be ported to those versions, but this is not something I will ever do. This table can also be used as a tool to help with directly editing the game's memory on real PS3 hardware, as all of the base addresses are the same.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## Features
+This trainer offers the ability to view and manipulate:
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+- The coordinates of Snake, Snake's aiming point, the camera, & Eva
+- Snake's current items and weapons for each slot
+- Current and max health & stamina
+- Current room & subarea
+- Game difficulty
+- 'Game Over If Discovered' status
+- All game statistics (continues, saves, alerts, kills, special items used, plants & animals captured, serious injuries sustained, damage taken, meals eaten, in-game time elapsed, life medicine used)
+- Snake's velocity
+- The availability of Survival Viewer menu options
+- How long Snake will sleep, vomit, or be on fire for, and trigger these events
+- Oxygen and grip gauge depletion
+- Weapon magnification
+- Weapon and item weight
+- Map magnification
+- Which camouflages and face paints have been obtained
+- Which camouflage and face paint is currently equipped or selected
+- Camo index
+- The quantities and max quantities for all weapons and items, including ones not normally obtainable
+- The contents of all 3 cages and 16 food slots
+- The state of all 50 injury slots, including X, Y, and Z position of injuries, all 19 unique injury types and their 4,865 variants, treatments applied to injuries, and injury health
+
+Also included are some in-development features which either might not function as expected, or might not be completed, such as:
+- Caution, evasion, and alert timers
+- Boss fight variables such as health, stamina, and coordinates
+- Entity visiblity
+- Camera type
+- Guard coordinates
+- Story flags
+- Camera overlays
+- Guard stats
+- Room states
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+1. Install RPCS3 and MGS3 HD (NPUB30610)
+1. Install Cheat Engine version 7.2 or newer
+1. Configure Cheat Engine to interpret 2 byte big endian, 4 byte big endian, and float big endian value types by following [these instructions](https://gist.github.com/jordanbtucker/384b67d2b7ccf4e478fb20ae86b13a41)
+1. In Cheat Engine, navigate to _Edit_ > _Settings_ (or click the _Settings_ button in the top right of the main Cheat Engine window), navigate to the _Scan Settings_ section, and ensure that _MEM_PRIVATE_, _MEM_IMAGE_, and _MEM_MAPPED_ are all ticked
+1. Download this trainer (MGS3__NPUB30610_.CT) and double click it to open it. When prompted, allow the script to run. This script is required for most of the trainer's features to function. See the Potentially Asked Questions to learn more about it.
+
+All done! Enjoy the trainer.
+
+**Example usage:** to give Snake pseudo-God mode, open the `Stats` section by clicking the box to the left of the `Stats` label, click on `Current Health`, then press `Enter` and type any big number that is smaller than 32,767. Press `Enter` again to confirm the value change, then click the box to the left of the `Current Health` label to activate the entry, which causes Cheat Engine to repeatedly write its value to memory.
+
+To configure the trainer for use with LioranBoard (or similar stream decks), simply
+1. Right click an entry that you want to control with the stream deck and click _Set/Change hotkeys_, then set a hotkey and action as desired
+1. Configure your stream deck to actuate that key when the desired conditions are met.
+
+**For example:** to allow a Twitch chat to kill Snake by redeeming channel points, right click `Current Health` within the `Stats` section, click `Set/Change hotkeys`, click `Create hotkey` in the popup window, and assign a key. Select `Set value to:` in the dropdown, and type `0` in the box beneath that. Then, within your stream deck software, configure a trigger that activates when someone redeems the appropriate channel point reward, and have the trigger actuate the hotkey defined for the entry in Cheat Engine.
+
+## Potentially Asked Questions
+**Q:** When I open the table, it asks me to run a script. What is it?<br>
+**A:** Cheat Engine interprets all pointers as little endian, and is not natively capable of interpreting them as big endian, which is how the PS3 architecture interprets its values. In order to interpret pointers as big endian automatically, a script is required to convert them. The script was written by [bmn](https://github.com/bmn), author of the [MGS2 PC Trainer](https://mgs.w00ty.com/mgs2/trainer/) and other Metal Gear tools.
+
+**Q:** Will you add [feature]?<br>
+**A:** Maybe. Check the extras section on the table (bottom right of the main Cheat Engine window) to see if I already have it planned. Send feature requests to `Major Zero#1516` on Discord.
 
 ## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+The best place to learn Cheat Engine basics is YouTube. Barely any Cheat Engine knowledge or experience is required to use this, so just experiment to learn how it works. If you're really stuck, message `Major Zero#1516` on Discord.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+## Attribution
+- apel for general Cheat Engine advice, and for showing me how to find pointers manually. The table would have never gotten anywhere without him.
+- bmn for writing the script to convert pointers to big endian. Likewise, he was instrumental in this table's progress.
+- Dark Byte and all other Cheat Engine contributors for making Cheat Engine.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
 
 ## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Do whatever you want with this, I don't care. There's probably an applicable license for this. Just don't pretend you made it yourself.
