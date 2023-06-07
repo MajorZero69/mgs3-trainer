@@ -61,10 +61,10 @@ To configure the trainer for use with LioranBoard (or similar stream decks), sim
 **A:** Cheat Engine interprets all pointers as little endian, and is not natively capable of interpreting them as big endian, which is how the PS3 architecture interprets its values. In order to interpret pointers as big endian automatically, a script is required to convert them. The script was written by [bmn](https://github.com/bmn), author of the [MGS2 PC Trainer](https://mgs.w00ty.com/mgs2/trainer/) and other Metal Gear tools.
 
 **Q:** Will you add [feature]?<br>
-**A:** Maybe. Check the extras section on the table (bottom right of the main Cheat Engine window) to see if I already have it planned. Send feature requests to `Major Zero#1516` on Discord.
+**A:** Maybe. Check the extras section on the table (bottom right of the main Cheat Engine window) to see if I already have it planned. Send feature requests to `major.zero` on Discord.
 
 ## Support
-The best place to learn Cheat Engine basics is YouTube. Barely any Cheat Engine knowledge or experience is required to use this, so just experiment to learn how it works. If you're really stuck, message `Major Zero#1516` on Discord.
+The best place to learn Cheat Engine basics is YouTube. Barely any Cheat Engine knowledge or experience is required to use this, so just experiment to learn how it works. If you're really stuck, message `major.zero` on Discord.
 
 ## Attribution
 - apel for general Cheat Engine advice, and for showing me how to find pointers manually. The table would have never gotten anywhere without him.
